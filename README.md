@@ -3,11 +3,6 @@
 ## Overview
 This project predicts customer churn for SyriaTel to reduce revenue loss by identifying at-risk customers for targeted retention. A tuned Random Forest model achieves 65% recall, highlighting key churn drivers like customer service calls and daytime charges.
 
-**Repository Contents**:
-- `SyriaTel_Churn_Prediction.ipynb`: Jupyter Notebook with analysis and visualization.
-- `Complete_SyriaTel_Churn_Pipeline.py`: Full pipeline with preprocessing, modeling, and feature importance plot.
-- `bigml_59c28831336c6604c800002a.csv`: Dataset (download from Kaggle).
-
 ## Business Problem
 - **Stakeholder**: SyriaTel Customer Retention Team.
 - **Goal**: Predict churn to prioritize retention efforts, minimizing revenue loss.

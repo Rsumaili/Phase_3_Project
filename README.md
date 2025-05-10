@@ -14,7 +14,7 @@ This project predicts customer churn for SyriaTel to reduce revenue loss by iden
 - **Details**: 3,333 records, 21 features (e.g., call minutes, charges, service calls), `churn` target (~14.5% churn rate).
 - **Preprocessing**:
   - Dropped: `phone number` (irrelevant), `state` (high cardinality).
-  - Engineered: `day_charge_per_minute`, `service_calls_intensity`.
+  - Encoding categorical variables, dropping of high cardinality and low importance columns in the data set: `day_charge_per_minute`, `service_calls_intensity`.
   - Encoded: `international plan`, `voice mail plan` (one-hot).
   - Scaled: `StandardScaler` (train-only fit).
   - Balanced: SMOTE for training data.
@@ -53,11 +53,3 @@ This project predicts customer churn for SyriaTel to reduce revenue loss by iden
 - Moderate precision (0.35) risks false positives.
 - Model may not generalize if customer behavior shifts.
 - Dropping `state` may miss minor regional trends.
-
-## Setup
-### Prerequisites
-- Python 3.8+
-- Jupyter Notebook
-- Libraries:
-  ```bash
-  pip install numpy pandas matplotlib seaborn scikit-learn imbalanced-learn
